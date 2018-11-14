@@ -35,6 +35,7 @@ import config from 'config';
 import DocumentHead from 'components/data/document-head';
 import LocaleSuggestions from 'components/locale-suggestions';
 import SignupProcessingScreen from 'signup/processing-screen';
+import SiteMockup from 'signup/site-mockup';
 
 // Libraries
 import analytics from 'lib/analytics';
@@ -577,6 +578,7 @@ class Signup extends React.Component {
 				<TransitionGroup component="div" className="signup__steps">
 					{ this.renderCurrentStep() }
 				</TransitionGroup>
+				<SiteMockup />
 				{ this.state.bearerToken && (
 					<WpcomLoginForm
 						authorization={ 'Bearer ' + this.state.bearerToken }
