@@ -135,7 +135,8 @@
 		color: #fff;
 	}
 
-	.logged-out-form {
+	.logged-out-form,
+	.login__form {
 		border: 0;
 		box-shadow: none;
 		max-width: 100%;
@@ -151,6 +152,11 @@
 			text-transform: uppercase;
 			width: auto;
 		}
+	}
+
+	.login__form-action button {
+		float: none;
+		display: block;
 	}
 
 	input[type='text'],
@@ -178,23 +184,27 @@
 		border-right: 0;
 		box-shadow: none;
 		max-width: 100%;
+	}
+
+	.social-buttons__button {
+		background-color: #384869;
+		border: 0;
+		border-radius: 0;
+		box-shadow: none;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 400;
+		margin: 0 auto;
+		padding: 12px 30px;
+		text-transform: uppercase;
+		width: auto;
+
+		.social-buttons__service-name {
+			margin-left: 0;
+		}
 
 		svg {
 			display: none;
-		}
-
-		.button {
-			background-color: #384869;
-			border: 0;
-			border-radius: 0;
-			box-shadow: none;
-			color: #fff;
-			font-size: 16px;
-			font-weight: 400;
-			margin: 0 auto;
-			padding: 12px 30px;
-			text-transform: uppercase;
-			width: auto;
 		}
 	}
 
@@ -218,11 +228,32 @@
 		padding: 10px 16px;
 	}
 
-	.step-wrapper {
+	.wp-login__links {
+		padding: 20px 0;
+	}
+
+	.wp-login__links a, .wp-login__links button {
+		border: 0;
+		padding: 10px 16px;
+		line-height: 21px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	.translator-invite__content {
+		margin: 0;
+		padding: 20px 15px 0;
+		border-top: 1px solid #e6e6e6;
+		text-align: center;
+	}
+
+	.step-wrapper,
+	.wp-login__main.main {
 		background: #fff;
 		border: 0;
 		box-sizing: border-box;
 		margin: 0 auto 50px;
+		max-width: none;
 		padding: 20px 0;
 		width: 600px;
 	}
@@ -238,16 +269,30 @@
 
 	.step-header,
 	.logged-out-form,
-	.logged-out-form__links {
+	.logged-out-form__links,
+	.login__form,
+	.wp-login__links {
 		max-width: 480px;
 		margin-left: auto;
 		margin-right: auto;
 	}
 
-	.formatted-header__title {
+	.formatted-header__title,
+	.login__form-header {
 		font-size: 2em;
 		margin-top: 1.5em;
 		margin-bottom: .4em;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 480px;
+	}
+
+	.login__form-header {
+		margin-top: .2em;
+	}
+
+	.login__form-header-wrapper {
+		padding-top: 1.5em;
 	}
 
 	.formatted-header__subtitle {
@@ -255,6 +300,17 @@
 
 		a {
 			display: inline-block;
+		}
+	}
+
+	.login__form-social {
+		padding-top: 24px;
+
+		.card {
+			box-shadow: none;
+			border: 1px solid #e6e6e6;
+			border-left: 0;
+			border-right: 0;
 		}
 	}
 }
