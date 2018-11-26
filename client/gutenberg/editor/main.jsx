@@ -19,6 +19,11 @@ import { getHttpData } from 'state/data-layer/http-data';
 import { translate } from 'i18n-calypso';
 import './hooks'; // Needed for integrating Calypso's media library (and other hooks)
 
+/**
+ * Style dependencies
+ */
+import './style.scss';
+
 class GutenbergEditor extends Component {
 	componentDidMount() {
 		const { siteId, postId, uniqueDraftKey, postType } = this.props;
